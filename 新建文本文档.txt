@@ -1,0 +1,70 @@
+x += FreamTime * x_speed;
+		if (x>=680) {
+			x_speed = -150;
+     	}
+		if (x<=0) {
+			x_speed = 150;
+		}
+		y += FreamTime * y_speed;
+		if (y >= 450) {
+			y_speed = -150;
+		}
+		if (y <= 0)  {
+			y_speed = 150;
+		}
+
+
+float x = 400;
+	float x_speed = 50;
+	float y = 100;
+	float y_speed = 50;
+pig.draw(100, 100)；
+Vec2 catPos(640, 450);
+
+
+
+const Texture dokulo(U"example/dokulo.png");
+
+pig.draw(x, y1);
+
+
+for (int i = 0; i < 5; i++)
+		{
+			dokulo_x[i] += FreamTime * dokulo_xsp[i];
+			dokulo_y[i] += FreamTime * dokulo _ysp[i];
+			if (dokulo_y[i] >= 600 - 130) {
+				dokulo_ysp[i] = -150;
+			}
+			if (dokulo_y[i] <= 0) {
+				dokulo_ysp[i] = 150;
+			}
+			if (dokulo_x[i] >= 680) {
+				dokulo_xsp[i] = -150;
+			}
+			if (dokulo_x[i] <= 0) {
+				dokulo_xsp[i] = 150;
+			}
+			dokulo.draw(dokulo_x[i], dokulo_y[i]);
+		}
+
+
+
+
+
+
+string inputKey = Console.ReadLine();
+            switch (inputKey)
+            {
+                case "1":
+                    Console.WriteLine("荒川");
+                    break;
+                case "2":
+                    Console.WriteLine("加藤");
+                    break;
+                case "3":
+                    Console.WriteLine("鈴木");
+                    break;
+                default:
+                    Console.WriteLine("その出席番号の人はいません");
+                    break;
+            }
