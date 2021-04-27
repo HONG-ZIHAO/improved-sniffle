@@ -68,6 +68,8 @@ string inputKey = Console.ReadLine();
                     Console.WriteLine("その出席番号の人はいません");
                     break;
             }
+222222
+
 	    
 	    
 11111
