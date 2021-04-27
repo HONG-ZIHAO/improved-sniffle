@@ -14,7 +14,7 @@ x += FreamTime * x_speed;
 		}
 
 
-float x = 400;
+int x = 400;
 	float x_speed = 50;
 	float y = 100;
 	float y_speed = 50;
